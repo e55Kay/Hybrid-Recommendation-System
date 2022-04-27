@@ -1,3 +1,7 @@
+#reading the users' ratings for the movies
+#Creating the KNN model and training it
+#pickling the model for the application to use.
+
 import pandas as pd
 from surprise import Dataset, Reader, KNNWithMeans
 import pickle
@@ -33,6 +37,8 @@ def load_model():
 
     #return algo
 
+
+load_model()
 '''def predict_rating(model,userId, movieId):
 	pred = model.predict(userId, movieId)
 	return pred.est'''

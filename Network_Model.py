@@ -1,4 +1,6 @@
-#For pickling the loaded Network
+#Creating Network as graph
+#Reading dataset and entering movies and movies details into the graph and then pickling the
+#graph for the application to use
 
 import networkx as nx
 import pandas as pd

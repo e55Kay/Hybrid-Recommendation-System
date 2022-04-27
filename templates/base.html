@@ -24,11 +24,11 @@
 
         <hr>
 
-        {% for i in user_list %}
+        {% for i in range(user_list|length) %}
         <div class="ui segment">
-            <p class="ui big header">{{ i.id }} | {{ i.title }}</p>
+            <p class="ui big header">{{ i+1 }} | {{ user_list[i].title }}</p>
 
-            <a class="ui red button" href="/delete/{{ i.id }}">Delete</a>
+            <a class="ui red button" href="/delete/{{ user_list[i].id }}">Delete</a>
         </div>
         {% endfor %}
 

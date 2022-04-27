@@ -1,3 +1,5 @@
+#now we run our application
+
 from flask import Flask, render_template, request, redirect, url_for
 import Recommendations as rc
 from flask_sqlalchemy import SQLAlchemy
